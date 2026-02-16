@@ -52,9 +52,9 @@ function App() {
     ],
     saladas: [
       { name: 'Empanadas', price: 4000, image: `${baseUrl}empanadas.jpeg` },
-      { name: 'Mini perros', price: 4000, image: `${baseUrl}mini perros.jpeg` },
+      { name: 'Mini perros', price: 5000, image: `${baseUrl}mini perros.jpeg` },
       { name: 'Mini tostadas con pesto', price: 4500, image: `${baseUrl}Mini tostadas con pesto.jpeg` },
-      { name: 'Mini hamburguesa', price: 5000, image: `${baseUrl}Mini hamburguesa.jpeg` },
+      { name: 'Mini hamburguesa', price: 6000, image: `${baseUrl}Mini hamburguesa.jpeg` },
       { name: 'Mini arepas rellenas de pollo', price: 5000, image: `${baseUrl}Mini arepas rellenas de pollo.jpeg` },
       { name: 'Sándwich de pollo', price: 8000, image: `${baseUrl}Sandwich de pollo.jpeg` },
       { name: 'Mini wraps de pollo', price: 5000, image: `${baseUrl}Mini wraps de pollo.jpeg` }
@@ -65,7 +65,7 @@ function App() {
       { name: 'Mini postre de cheesecake', price: 4000, image: `${baseUrl}Mini postre de cheesecake.jpeg` },
       { name: 'Fresa con malvavisco', price: 4000, image: `${baseUrl}Fresa con masmelo.jpeg` },
       { name: 'Galleta con queso crema y mermelada', price: 3000, image: `${baseUrl}Galleta con queso crema y mermelada.jpeg` },
-      { name: 'Vaso con mini galletas de chips', price: 6000, description: '30 unidades', image: `${baseUrl}Vaso con mini galletas de chips.jpeg` }
+      { name: 'Vaso con mini galletas de chips', price: 10000, description: '30 unidades', image: `${baseUrl}Vaso con mini galletas de chips.jpeg` }
     ],
     desayunos: [
       { 
