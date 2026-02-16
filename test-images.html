@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Imágenes - KUUK</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            color: #ff9ec1;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .image-box {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .image-box img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .image-name {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #666;
+        }
+        .status {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 11px;
+            margin-top: 5px;
+        }
+        .status.ok {
+            background: #4CAF50;
+            color: white;
+        }
+        .status.error {
+            background: #f44336;
+            color: white;
+        }
+        .instructions {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧁 Test de Imágenes - KUUK</h1>
+    
+    <div class="instructions">
+        <strong>📋 Instrucciones:</strong><br>
+        1. Copia este archivo a la carpeta <code>dist/</code><br>
+        2. Ábrelo en el navegador<br>
+        3. Si ves las imágenes = ✅ Build correcto<br>
+        4. Si NO ves las imágenes = ❌ Problema en el build
+    </div>
+
+    <div id="status"></div>
+    <div class="container" id="imageContainer"></div>
+
+    <script>
+        const images = [
+            'logo.jpeg',
+            'Cupcakes.jpeg',
+            'empanadas.jpeg',
+            'Fresa con masmelo.jpeg',
+            'Galleta con queso crema y mermelada.jpeg',
+            'Mini arepas rellenas de pollo.jpeg',
+            'Mini hamburguesa.jpeg',
+            'mini perros.jpeg',
+            'Mini postre de cheesecake.jpeg',
+            'Mini torta personal.jpeg',
+            'Mini tostadas con pesto.jpeg',
+            'Mini wraps de pollo.jpeg',
+            'Opción 1.jpeg',
+            'Opción 2.jpeg',
+            'Opción 3.jpeg',
+            'Parfait.jpeg',
+            'Sandwich de pollo.jpeg',
+            'Vaso con mini galletas de chips.jpeg',
+            'Vaso de frutas mixto.jpeg'
+        ];
+
+        const container = document.getElementById('imageContainer');
+        let loaded = 0;
+        let failed = 0;
+
+        images.forEach(imageName => {
+            const box = document.createElement('div');
+            box.className = 'image-box';
+            
+            const img = document.createElement('img');
+            img.src = imageName;
+            
+            const name = document.createElement('div');
+            name.className = 'image-name';
+            name.textContent = imageName;
+            
+            const status = document.createElement('span');
+            status.className = 'status';
+            status.textContent = 'Cargando...';
+            
+            img.onload = () => {
+                status.className = 'status ok';
+                status.textContent = '✅ OK';
+                loaded++;
+                updateStatus();
+            };
+            
+            img.onerror = () => {
+                status.className = 'status error';
+                status.textContent = '❌ Error';
+                img.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150"><rect width="200" height="150" fill="%23ff9ec1"/><text x="50%" y="50%" text-anchor="middle" fill="white" font-size="20">NO CARGÓ</text></svg>';
+                failed++;
+                updateStatus();
+            };
+            
+            box.appendChild(img);
+            box.appendChild(name);
+            box.appendChild(status);
+            container.appendChild(box);
+        });
+
+        function updateStatus() {
+            const statusDiv = document.getElementById('status');
+            const total = images.length;
+            const pending = total - loaded - failed;
+            
+            statusDiv.innerHTML = `
+                <div style="background: white; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
+                    <h3>📊 Resultado:</h3>
+                    <p>✅ Cargadas: <strong style="color: #4CAF50">${loaded}/${total}</strong></p>
+                    <p>❌ Fallidas: <strong style="color: #f44336">${failed}/${total}</strong></p>
+                    <p>⏳ Pendientes: <strong>${pending}/${total}</strong></p>
+                    ${loaded === total ? '<p style="color: #4CAF50; font-weight: bold;">🎉 ¡Todas las imágenes cargaron correctamente!</p>' : ''}
+                    ${failed > 0 ? '<p style="color: #f44336; font-weight: bold;">⚠️ Algunas imágenes no se encontraron</p>' : ''}
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+.social-float-container {
+  position: fixed;
+  bottom: 6rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 998;
+}
+
+.social-float-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.social-float-button:hover {
+  transform: scale(1.1);
+}
+
+/* Animación de pulso */
+@keyframes pulse-social {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.social-float-button {
+  animation: pulse-social 2s ease-in-out infinite;
+}
+
+.social-float-button:hover {
+  animation: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .social-float-container {
+    bottom: 5rem;
+    right: 1.5rem;
+  }
+
+  .social-float-button {
+    width: 55px;
+    height: 55px;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-float-container {
+    bottom: 4.5rem;
+    right: 1rem;
+  }
+
+  .social-float-button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,104 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║          🚨 SOLUCIÓN URGENTE - IMÁGENES NO SE VEN 🚨        ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+✅ YA CONSTRUÍ TU PROYECTO - Las imágenes están en: dist/
+
+══════════════════════════════════════════════════════════════
+
+📋 HAGO ESTO AHORA (5 MINUTOS):
+
+1. 🔴 EJECUTA: deploy-github.bat
+   
+2. 🔴 Ve a la carpeta: DEPLOY_TEMP (se abrirá sola)
+   
+3. 🔴 Ve a GitHub → Tu repo → Rama: gh-pages
+   
+4. 🔴 BORRA TODO en gh-pages
+   
+5. 🔴 SUBE TODO de DEPLOY_TEMP
+   
+6. 🔴 Espera 3 minutos
+   
+7. 🔴 Abre: https://luis-miguel-garcia-toro.github.io/Juliana_portafolio/
+   
+8. 🔴 Presiona: Ctrl + Shift + R (recarga forzada)
+
+══════════════════════════════════════════════════════════════
+
+🔍 VERIFICA ANTES DE SUBIR:
+
+Abre en navegador: dist\test-images.html
+
+¿Ves todas las imágenes? 
+   ✅ SÍ → Sube a GitHub
+   ❌ NO → Avísame
+
+══════════════════════════════════════════════════════════════
+
+⚠️ PROBLEMA MÁS COMÚN:
+
+El 99% del tiempo es porque:
+❌ No subiste TODAS las imágenes a GitHub
+❌ Las imágenes están en una subcarpeta (deben estar en raíz)
+❌ Caché del navegador
+
+══════════════════════════════════════════════════════════════
+
+🔗 PRUEBA ESTAS URLs DIRECTAMENTE:
+
+https://luis-miguel-garcia-toro.github.io/Juliana_portafolio/logo.jpeg
+https://luis-miguel-garcia-toro.github.io/Juliana_portafolio/Cupcakes.jpeg
+
+¿Qué ves?
+   ✅ Imagen → Problema de caché, limpia navegador
+   ❌ 404 → Imágenes no están en GitHub
+
+══════════════════════════════════════════════════════════════
+
+📁 ARCHIVOS QUE CREÉ PARA AYUDARTE:
+
+1. deploy-github.bat        → Construye y prepara todo
+2. test-images.html          → Prueba las imágenes
+3. SOLUCION_IMAGENES.md      → Guía completa
+4. dist/                     → Tu build listo
+
+══════════════════════════════════════════════════════════════
+
+✅ CHECKLIST RÁPIDO:
+
+□ Ejecuté deploy-github.bat
+□ Vi la carpeta DEPLOY_TEMP
+□ Verifiqué que tiene 19 archivos .jpeg
+□ Subí TODO a GitHub rama gh-pages  
+□ Los archivos están en RAÍZ (no en carpeta)
+□ Esperé 3 minutos
+□ Recargué con Ctrl+Shift+R
+□ ¡FUNCIONA! 🎉
+
+══════════════════════════════════════════════════════════════
+
+🆘 SI NO FUNCIONA:
+
+1. Abre consola navegador (F12)
+2. Ve a pestaña Network
+3. Busca errores en rojo
+4. Toma captura
+5. Avísame
+
+══════════════════════════════════════════════════════════════
+
+💡 RECUERDA:
+
+- Las imágenes YA están construidas correctamente
+- El problema está en CÓMO las subes a GitHub
+- DEBEN estar en la RAÍZ de gh-pages
+- GitHub tarda 1-3 minutos en actualizar
+
+══════════════════════════════════════════════════════════════
+
+¡EMPIEZA AHORA! → Ejecuta: deploy-github.bat
+
+══════════════════════════════════════════════════════════════
