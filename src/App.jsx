@@ -47,7 +47,7 @@ function App() {
   const baseUrl = import.meta.env.BASE_URL;
   const menuData = {
     saludables: [
-      { name: 'Vaso de frutas mixto', price: 5500, image: `${baseUrl}Vaso de frutas mixto.jpeg` },
+      { name: 'Vaso de frutas mixto', price: 8000, description: 'Vaso de 9oz con fruta de temporada', image: `${baseUrl}Vaso de frutas mixto.jpeg` },
       { name: 'Parfait', price: 7000, image: `${baseUrl}Parfait.jpeg` }
     ],
     saladas: [
@@ -55,17 +55,17 @@ function App() {
       { name: 'Mini perros', price: 5000, image: `${baseUrl}mini perros.jpeg` },
       { name: 'Mini tostadas con pesto', price: 4500, image: `${baseUrl}Mini tostadas con pesto.jpeg` },
       { name: 'Mini hamburguesa', price: 6000, image: `${baseUrl}Mini hamburguesa.jpeg` },
-      { name: 'Mini arepas rellenas de pollo', price: 5000, image: `${baseUrl}Mini arepas rellenas de pollo.jpeg` },
+      { name: 'Arepas medias de pollo', price: 8000, description: 'Con mix de verduras, queso y crema de leche', image: `${baseUrl}Mini arepas rellenas de pollo.jpeg` },
       { name: 'Sándwich de pollo', price: 8000, image: `${baseUrl}Sandwich de pollo.jpeg` },
       { name: 'Mini wraps de pollo', price: 5000, image: `${baseUrl}Mini wraps de pollo.jpeg` }
     ],
     dulces: [
       { name: 'Cupcakes unidad', price: 4000, image: `${baseUrl}Cupcakes.jpeg` },
       { name: 'Mini torta personal', price: 26000, image: `${baseUrl}Mini torta personal.jpeg` },
-      { name: 'Mini postre de cheesecake', price: 4000, image: `${baseUrl}Mini postre de cheesecake.jpeg` },
+      { name: 'Mini postre de cheesecake', price: 4000, description: 'Sabor de chocolate, frutos rojos o amarillo. Con base de galleta, crema de queso crema y salsa según el sabor', image: `${baseUrl}Mini postre de cheesecake.jpeg` },
       { name: 'Fresa con malvavisco', price: 4000, image: `${baseUrl}Fresa con masmelo.jpeg` },
       { name: 'Galleta con queso crema y mermelada', price: 3000, image: `${baseUrl}Galleta con queso crema y mermelada.jpeg` },
-      { name: 'Vaso con mini galletas de chips', price: 10000, description: '30 unidades', image: `${baseUrl}Vaso con mini galletas de chips.jpeg` }
+      { name: 'Vaso con mini galletas de chips y salsa de chocolate', price: 10000, description: '30 unidades', image: `${baseUrl}Vaso con mini galletas de chips.jpeg` }
     ],
     desayunos: [
       { 
