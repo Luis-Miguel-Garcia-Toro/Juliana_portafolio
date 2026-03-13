@@ -48,13 +48,13 @@ function App() {
   const menuData = {
     saludables: [
       { name: 'Vaso de frutas mixto', price: 8000, description: 'Hecho con frutas de temporada', image: `${baseUrl}Vaso de frutas mixto.jpeg` },
-      { name: 'Parfait', price: 7000, image: `${baseUrl}Parfait.jpeg` }
+      { name: 'Parfait', price: 10000, image: `${baseUrl}Parfait.jpeg` }
     ],
     saladas: [
       { name: 'Empanadas', price: 4000, image: `${baseUrl}empanadas.jpeg` },
       { name: 'Mini perros', price: 5000, image: `${baseUrl}mini perros.jpeg` },
       { name: 'Mini tostadas con pesto', price: 4500, image: `${baseUrl}Mini tostadas con pesto.jpeg` },
-      { name: 'Mini hamburguesa', price: 6000, image: `${baseUrl}Mini hamburguesa.jpeg` },
+      { name: 'Mini hamburguesa', price: 8000, image: `${baseUrl}Mini hamburguesa.jpeg` },
       { name: 'Arepas medianas de pollo', price: 8000, description: 'Hechas con mix de verdura, queso y queso-crema', image: `${baseUrl}Mini arepas rellenas de pollo.jpeg` },
       { name: 'Sándwich de pollo', price: 8000, image: `${baseUrl}Sandwich de pollo.jpeg` },
       { name: 'Mini wraps de pollo', price: 5000, image: `${baseUrl}Mini wraps de pollo.jpeg` }
